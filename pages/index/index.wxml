@@ -2,8 +2,12 @@
 <import src="../../templates/index/header/index.wxml"/>
 <!--Mask-->
 <import src="../../yhui/Mask/index.wxml"/>
+<!--YHToast-->
+<import src="../../yhui/YHToast/index.wxml"/>
 
 <view class="page-container">
     <template is="Header" data="{{dropdownStatus}}"></template>
+    <button type="primary" bindtap="showRandomToast" size="{{primarySize}}"> Toast</button>
 </view>
 <template is="Mask" wx:if="{{maskStatus}}"></template>
+<template is="YHToast" data="{{show:toastStatus,toastContent}}"></template>

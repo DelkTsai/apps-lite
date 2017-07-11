@@ -1,6 +1,7 @@
 import IndexAction from './index.action';
 import { addToPageContext } from '../../yhbase/Utils/index';
 import Mask from '../../yhui/Mask/index';
+import YHToast from '../../yhui/YHToast/index';
 // pages/index/index.js
 Page({
 
@@ -15,6 +16,7 @@ Page({
    */
   onLoad: function (options) {
     this.mask = new Mask(this);
+    this.yhtoast = new YHToast(this);
     addToPageContext(IndexAction,this);
     this.mask.setOnMaskClick(this.closeDropDown);
   },
@@ -30,6 +32,10 @@ Page({
    */
   onShow: function () {
   
+  },
+
+  showRandomToast: function() {
+    this.showToast('I am random toast')
   },
 
   /**
