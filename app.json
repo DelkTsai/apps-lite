@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTextStyle": "#fff",
+    "navigationBarTitleText": "小程序基础脚手架",
+    "backgroundColor": "#FFF",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  }
+}

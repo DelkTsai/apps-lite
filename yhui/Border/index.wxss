@@ -1,0 +1,17 @@
+.yh-border-bottom {
+    position: absolute;
+    left:0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    background: -webkit-gradient(linear, 0 50%, 0 100%, from(transparent), to(#DDD));
+}
+
+.yh-border-right {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    background: -webkit-gradient(linear, 50% 0, 100% 0, from(transparent), to(#DDD));
+}

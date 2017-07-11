@@ -1,0 +1,23 @@
+.yh-image-container {
+    position: relative;
+    background-image: '../../images/yh.png';
+}
+
+.yh-image {
+    left: 0;
+    top:0;
+}
+
+.yh-image-placeholder {
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #FFF;
+    transition: opacity 0.1s linear;
+}
+
+.yh-image-placeholder.hide {
+    opacity: 0;
+}
+

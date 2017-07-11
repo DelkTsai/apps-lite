@@ -1,0 +1,37 @@
+.transition {
+    position: fixed;
+    left: 0;
+    z-index: 20;
+    transition:transform 0.2s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.transition-abs {
+    position: absolute;
+    left: 0;
+    z-index: 20;
+    transition:transform 0.2s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.transition-abs.top {
+  bottom: 100%;
+}
+
+.transition-abs.slide-down {
+  transform: translate3d(0,100%,0);
+}
+
+.transition-abs.bottom {
+  top: 100%;
+}
+
+.transition-abs.slide-up {
+  transform: translate3d(0,-100%,0);
+}
+
+.transition.bottom {
+    top: 100%;
+}
+
+.transition.slide-up {
+   transform: translate3d(0,-100%,0);
+}

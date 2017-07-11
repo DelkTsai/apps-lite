@@ -1,0 +1,3 @@
+<template name="Mask">
+    <view class="yh-mask" bindtap="onMaskClick"></view>
+</template>

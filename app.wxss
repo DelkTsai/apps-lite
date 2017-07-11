@@ -1,0 +1,4 @@
+@import "./yhui/yhui.wxss";
+page {
+  height: 100%;
+}

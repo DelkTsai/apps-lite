@@ -1,0 +1,8 @@
+@import "./animation.wxss";
+@import "./YHSpinner/index.wxss";
+@import "./Transition/index.wxss";
+@import "./Mask/index.wxss";
+@import "./Border/index.wxss";
+@import "./YHImage/index.wxss";
+@import "./YHLoading/index.wxss";
+@import "./YHToast/index.wxss";

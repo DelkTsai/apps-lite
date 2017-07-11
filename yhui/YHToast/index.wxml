@@ -1,0 +1,5 @@
+<template name="YHToast">
+  <view class="yh-toast {{!show? 'fade-out' : ''}}">
+    <text class="yh-toast-content">{{toastContent}}</text>
+  </view>
+</template>

@@ -1,0 +1,22 @@
+.yh-toast {
+  background: rgba(0,0,0,0.6);
+  color:#FFF;
+  text-align: center;
+  font-size:15px;
+  position:fixed;
+  padding:10px 20px;
+  border-radius: 5px;
+  top: 50%;
+  width: 70%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  transition: all 0.2s linear;
+}
+
+.yh-toast.fade-out {
+  opacity: 0;
+  transform: scale3d(0,0,0);
+  transform-origin: center;
+}

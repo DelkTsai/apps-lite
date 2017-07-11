@@ -1,0 +1,3 @@
+<template name="Border">
+    <view class="yh-border"></view>
+</template>

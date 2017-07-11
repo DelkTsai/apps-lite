@@ -1,0 +1,6 @@
+<template name="yhloading">
+    <view class="yhloading">
+        <image class="yhloading_spinner" style="width:24px;height:24px;" src="../../images/spinner.png"></image>
+         <image style="width:24px;height:24px;" class="yhloading_yh" src="../../images/yh.png"></image>
+    </view>
+</template>

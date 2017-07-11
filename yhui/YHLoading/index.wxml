@@ -1,0 +1,20 @@
+<!--Mask-->
+<import src="../Mask/index.wxml"/>
+
+<template name="YHLoading">
+    <template is="Mask" wx:if="{{mask}}"></template>
+    <view class="yh-spinner">
+      <div class="yh-spinner-item"/>
+      <div class="yh-spinner-item"/>
+      <div class="yh-spinner-item"/>
+      <div class="yh-spinner-item"/>
+      <div class="yh-spinner-item"/>
+      <div class="yh-spinner-item"/>
+      <div class="yh-spinner-item"/>
+      <div class="yh-spinner-item"/>
+      <div class="yh-spinner-item"/>
+      <div class="yh-spinner-item"/>
+      <div class="yh-spinner-item"/>
+      <div class="yh-spinner-item"/>
+    </view>
+</template>

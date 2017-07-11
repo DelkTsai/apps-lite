@@ -1,0 +1,20 @@
+.yhloading {
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.yhloading_spinner {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    top:0;
+    animation: rotate 0.6s 0s infinite linear;
+}
+
+.yhloading_yh {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+}
