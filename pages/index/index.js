@@ -1,5 +1,6 @@
 import IndexAction from './index.action';
 import { addToPageContext } from '../../yhbase/Utils/index';
+import Mask from '../../yhui/Mask/index';
 // pages/index/index.js
 Page({
 
@@ -13,7 +14,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.mask = new Mask(this);
     addToPageContext(IndexAction,this);
+    this.mask.setOnMaskClick(this.closeDropDown);
   },
 
   /**
