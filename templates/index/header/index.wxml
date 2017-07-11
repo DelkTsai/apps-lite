@@ -1,0 +1,13 @@
+<import src="../headerdropdown/index.wxml"/>
+
+<template name="Header">
+  <view class="header-container">
+    <view class="header-content" catchtap="toggleDropDown"></view>
+    <view class="yh-border-bottom"></view>
+    <view class="header-dropdown-container">
+      <template is="Headerdropdown" data="{{dropdownStatus}}"></template>
+    </view>
+  </view>
+  <view class="classname">
+  </view>
+</template>

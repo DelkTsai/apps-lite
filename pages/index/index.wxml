@@ -1,3 +1,6 @@
-<view class="">
- Hello World
+<!--Header-->
+<import src="../../templates/index/header/index.wxml"/>
+
+<view class="page-container">
+    <template is="Header" data="{{dropdownStatus}}"></template>
 </view>

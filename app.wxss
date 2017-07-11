@@ -1,4 +1,5 @@
 @import "./yhui/yhui.wxss";
+@import "./templates/index.wxss";
 page {
   height: 100%;
 }

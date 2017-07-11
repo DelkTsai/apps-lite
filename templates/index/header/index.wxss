@@ -1,0 +1,23 @@
+.header-container {
+  height: 2rem;
+  position: relative;
+}
+
+.header-content {
+  height: 2rem;
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  z-index: 30;
+  background: #F8F8F8;
+}
+
+.header-dropdown-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  z-index: 10;
+}
