@@ -54,6 +54,7 @@ class YHImage  extends YHComponent{
     }
 
     onYHImageLoad(event) {
+      console.log(event);
         const {
             imgLoadList
         } = this.pageContext.data;
@@ -66,4 +67,3 @@ class YHImage  extends YHComponent{
 }
 
 export default YHImage;
-// module.exports = YHImage;

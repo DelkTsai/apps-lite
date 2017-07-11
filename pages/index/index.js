@@ -2,6 +2,7 @@ import IndexAction from './index.action';
 import { addToPageContext } from '../../yhbase/Utils/index';
 import Mask from '../../yhui/Mask/index';
 import YHToast from '../../yhui/YHToast/index';
+import YHImage from '../../yhui/YHImage/index';
 // pages/index/index.js
 Page({
 
@@ -9,6 +10,9 @@ Page({
    * 页面的初始数据
    */
   data: {
+    img: 
+      'http://static.yonghuivip.com/62e06d932bca46aee747c7d6de5e2d69-d2db44ec7e2283a52a26859000d77c02.png?v=1499762940510',
+      
   },
 
   /**
@@ -19,6 +23,10 @@ Page({
     this.yhtoast = new YHToast(this);
     addToPageContext(IndexAction,this);
     this.mask.setOnMaskClick(this.closeDropDown);
+    const img1 = new YHImage({context:this});
+    img1.registerImgInfo({
+      url: 'http://static.yonghuivip.com/62e06d932bca46aee747c7d6de5e2d69-d2db44ec7e2283a52a26859000d77c02.png?v=1499762940510',
+    })
   },
 
   /**

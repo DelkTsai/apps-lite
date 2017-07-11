@@ -1,6 +1,6 @@
 .yh-image-container {
     position: relative;
-    background-image: '../../images/yh.png';
+    text-align: center;
 }
 
 .yh-image {
@@ -8,15 +8,29 @@
     top:0;
 }
 
-.yh-image-placeholder {
-    opacity: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #FFF;
-    transition: opacity 0.1s linear;
+.yh-image-placeholder-container {
+  position: absolute;
+  background: #FFF;
+  top: 0;
+  bottom:0;
+  left: 0;
+  right: 0;
+  transition: opacity 0.1s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+
+
+.yh-image-placeholder {
+    width: 100%;
+    height: 100%;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.yh-image-placeholder-container.hide ,
 .yh-image-placeholder.hide {
     opacity: 0;
 }

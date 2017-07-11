@@ -1,6 +1,8 @@
 <template name="YHImage">
     <view class="yh-image-container" style="width: {{width}}; height: {{height}}">
-        <image class="yh-image" style="width: 100%;height: 100%" src="{{inview ? src : ''}}" id="{{src}}" mode="aspectFit" bindload="onYHImageLoad"></image>
-        <image class="yh-image-placeholder {{loaded ? 'hide' : ''}}" src="../../images/yh.png" mode="aspectFit" style="width:100%;height: 100%;"></image>
+        <image class="yh-image" style="width: 100%;height: 100%" src="{{src}}" id="{{src}}" mode="aspectFit" bindload="onYHImageLoad"></image>
+        <view class="yh-image-placeholder-container {{loaded ? 'hide' : ''}}">
+        <image class="yh-image-placeholder {{loaded ? 'hide' : ''}}" src="../../images/yh.png" mode="aspectFit"></image>
+        </view>
     </view>
 </template>
