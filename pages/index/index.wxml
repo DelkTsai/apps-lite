@@ -6,11 +6,16 @@
 <import src="../../yhui/YHToast/index.wxml"/>
 <!--YHImage-->
 <import src="../../yhui/YHImage/index.wxml"/>
+<!--YHLoading-->
+<import src="../../yhui/YHLoading/index.wxml"/>
 
 <view class="page-container">
     <template is="Header" data="{{dropdownStatus}}"></template>
     <template is="YHImage" data="{{loaded: imgLoadList[img],src:img,width: '100%', height: '200px'}}"/>
-    <button type="primary" bindtap="showRandomToast" size="{{primarySize}}"> Show Toast</button>
+    <button type="primary" style="margin-bottom:20px" bindtap="showRandomToast" size="{{primarySize}}"> Show Toast</button>
+    <button type="default" bindtap="showAutoLoading" size="{{primarySize}}"> Show Loading</button>
+
 </view>
 <template is="Mask" wx:if="{{maskStatus}}"></template>
+<template is="YHLoading" wx:if="{{loading}}"></template>
 <template is="YHToast" data="{{show:toastStatus,toastContent}}"></template>

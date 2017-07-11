@@ -29,10 +29,26 @@ function toggleDropDown() {
   })
 }
 
+function showAutoLoading() {
+  const {
+    loading
+  } = this.data;
+  if(loading) return;
+  this.setData({
+    loading: true
+  })
+  setTimeout(()=>{
+    this.setData({
+      loading: false
+    })
+  },1000);
+}
+
 const action = {
   'openDropDown': openDropDown,
   'closeDropDown': closeDropDown,
-  'toggleDropDown': toggleDropDown
+  'toggleDropDown': toggleDropDown,
+  'showAutoLoading': showAutoLoading
 }
 
 export default action;
